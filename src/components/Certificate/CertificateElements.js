@@ -5,8 +5,10 @@ export const Container = styled.div`
   display: flex;
   background-color: rgba(213,254,227,0);
   flex-direction: row;
-  height: 100vh;
-  width: 100vw;
+  height: 50%;
+  width: 50%;
+ 
+  
 
 `;
 
@@ -17,11 +19,12 @@ export const PoliceCertification = styled.span`
   position: absolute;
   font-style: normal;
   font-weight: 700;
-  color: orange;
+  color: black;
   height: 49px;
   width: 960px;
   font-size: 35px;
   text-align: center;
+  z-index: 2;
 `;
 
 export const Rect3 = styled.div`
@@ -29,10 +32,11 @@ export const Rect3 = styled.div`
   left: 0px;
   width: 1119px;
   height: 646px;
-  position: absolute;
+  position: center;
   border-width: 4px;
   border-color: orange;
   border-style: solid;
+  
 `;
 
 export const PoliceCertificationStack = styled.div`
@@ -45,13 +49,14 @@ export const PoliceCertificationStack = styled.div`
 
 export const Detail = styled.span`
   font-family: Roboto;
-  top: 231px;
+  top: 300px;
   position: absolute;
   font-style: normal;
-  font-weight: 400;
-  color: orange;
-  font-size: 19px;
-  left: 569px;
+  font-weight: 300;
+  color: black;
+  font-size: 30px;
+  left: 200px;
+  z-index: 4;
 `;
 
 export const Rect = styled.div`
@@ -65,12 +70,12 @@ export const Rect = styled.div`
 
 export const Auther = styled.span`
   font-family: Roboto;
-  top: 468px;
+  top: 600px;
   left: 569px;
   position: absolute;
   font-style: normal;
   font-weight: 700;
-  color: orange;
+  color: black;
   height: 74px;
   width: 418px;
   font-size: 18px;
@@ -84,7 +89,7 @@ export const Auther1 = styled.span`
   position: absolute;
   font-style: normal;
   font-weight: 700;
-  color: orange;
+  color: black;
   height: 37px;
   width: 277px;
   font-size: 18px;
@@ -92,12 +97,12 @@ export const Auther1 = styled.span`
 `;
 
 export const Image = styled.img`
-  top: 0;
-  left: 0;
+  
   width: 100%;
   height: 100%;
-  position: absolute;
-  object-fit: contain;
+  position: center;
+  padding-right: 200px;
+  
 `;
 
 export const Date = styled.span`
@@ -107,7 +112,7 @@ export const Date = styled.span`
   position: absolute;
   font-style: normal;
   font-weight: 700;
-  color: orange;
+  color: black;
   font-size: 18px;
 `;
 
@@ -115,6 +120,8 @@ export const PoliceCertificationStackStack = styled.div`
   width: 1119px;
   height: 646px;
   position: relative;
+  
+  
 `;
 
 export const Rect2 = styled.div`
@@ -135,4 +142,5 @@ export const PoliceCertificationStackStackRow = styled.div`
   margin-right: -1291px;
   margin-left: 143px;
   margin-top: 49px;
+  
 `;

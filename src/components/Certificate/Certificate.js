@@ -1,7 +1,7 @@
 import React from "react";
 import policePng from '../../images/police.png';
 import {PoliceCertification, PoliceCertificationStack, PoliceCertificationStackStack, PoliceCertificationStackStackRow, Container, 
-    Rect3, Detail, Rect, Auther, Auther1, Image, Date} from './CertificateElements';
+     Detail, Auther, Auther1, Image, Date} from './CertificateElements';
 
 function Certificate({name,nic,address}) {
 
@@ -11,19 +11,20 @@ function Certificate({name,nic,address}) {
       <PoliceCertificationStackStackRow>
         <PoliceCertificationStackStack>
           <PoliceCertificationStack>
-            <PoliceCertification>Grama Certification</PoliceCertification>
-            <Rect3></Rect3>
+            <PoliceCertification>Grama-Certification</PoliceCertification>
+            
           </PoliceCertificationStack>
           <Detail>
-            This is to certify that {name} {"\n"} holding National Identity card
-            bearing number{"\n"}
-            {" " + nic} who has been residing at {"\n"}
-            {" " + address} in my police station area to{"\n"}has not been
-            involved in any criminal activities, nor has he/she come to the
-            {"\n"}adverse notice of during the period of residence in my area.
+            This is to certify that {name}  <br></br>holding National Identity card
+            bearing number{"\n"} <br></br>
+            {" " + nic} who has been residing at {"\n"} <br></br>
+            {" " + address} in my police station area to <br></br>has not been
+            involved in any criminal activities, <br></br>nor has he/she come to the
+            {"\n"}adverse notice of <br></br> during the period of residence in my area.
           </Detail>
-          <Rect></Rect>
+         
           <Auther>
+          
             Authorised by officer in charge{"\n"}
             Village Officer{"\n"}
             (respective Area)

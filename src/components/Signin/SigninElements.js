@@ -3,14 +3,16 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     background: black;
-    display: flex;
+     min-height: 1300px; //new one
+    min-width: 100%;
+     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    align-items: center; 
+    position: relative; //relative is the old one
     bottom: 0;
     left:0;
     right:0;
-    top:0;
+  
     z-index: 0;
     overflow: hidden;
     background: linear-gradient (
@@ -24,7 +26,7 @@ export const FormWrap = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+        
     @media screen and (max-width: 400px) {
         height: 80%;
 
@@ -39,6 +41,7 @@ export const Icon = styled.div`
     color: #fff;
     font-weight: 700;
     font-size: 32px;
+    
 
     @media screen and (max-width: 480px){
         margin-left: 16px;
@@ -71,6 +74,7 @@ export const Form = styled.form`
     padding: 80px 32px;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.9);
+   
 
     @media screen and (max-width: 400px) {
         padding: 32px 32px;
@@ -90,6 +94,7 @@ export const Form = styled.form`
     margin-bottom: 8px;
     font-size: 14px;
     color: #fff; 
+    
  `
 
  export const FormInput = styled.input`
