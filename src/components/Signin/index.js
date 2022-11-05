@@ -16,7 +16,7 @@ import Certificate from "../Certificate/Certificate";
 import '../Signin/signelements.css';
 
 const Apply = () => {
-  const { state, getIDToken, signIn, signOut } = useAuthContext();
+  const { state, getIDToken, signIn } = useAuthContext();
 
   const [name, setName] = useState("");
   const [nic, setNic] = useState("");
