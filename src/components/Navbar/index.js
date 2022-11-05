@@ -6,6 +6,7 @@ import { animateScroll as scroll } from 'react-scroll';
 
 
 
+
 const Navbar = ({toggle}) => {
   const [scrollNav, setScrollNav] = useState(false)
   const { state, signIn, signOut } = useAuthContext();
@@ -36,15 +37,15 @@ const Navbar = ({toggle}) => {
 
   return (
     <>
-    <Nav scrollNav = {scrollNav}>
+    <Nav to="#" scrollNav = {scrollNav}>
         <NavbarContainer>
-            <NavLogo onClick={toggleHome}>Grama-Check </NavLogo>
-            <MobileIcon onClick={toggle}>
+            <NavLogo to="#" onClick={toggleHome}>Grama-Check </NavLogo>
+            <MobileIcon to="#" onClick={toggle}>
               <FaBars/>
             </MobileIcon >
             
-               <NavMenu>
-              <NavItem> 
+               <NavMenu to="#" >
+              <NavItem to="#" > 
                 <NavLinks to='about' smooth={true} duration={500} spy={true} exact = 'true' offset={-80}>About</NavLinks>
               </NavItem>
               <NavItem>
@@ -53,23 +54,27 @@ const Navbar = ({toggle}) => {
               <NavItem>
                 <NavLinks to='apply'  smooth={true} duration={500} spy={true} exact = 'true' offset={-80}>Apply</NavLinks>
               </NavItem>  
+              
               <NavItem>
-                <NavLinks to='help'>Help</NavLinks>
-              </NavItem>   
-              {/* <NavItem>
-                <NavLinks to='signup'>Sign Up</NavLinks>
-              </NavItem>        */}
+              <NavLinks to="#" as="a" href='https://gramachecksupport.slack.com' >Help        
+              </NavLinks>
+              </NavItem>
+                
+              
+
+             
+              
             </NavMenu>
            
             {state.isAuthenticated
           ? (
-            <NavBtn >
-            <NavBtnLink className="button" onClick={() => signOut()}>Logout</NavBtnLink>
+            <NavBtn to="#">
+            <NavBtnLink to ="button" onClick={() => signOut()}>Logout</NavBtnLink>
             </NavBtn>
             )
-          : <NavBtn >
+          : <NavBtn to="#">
 
-         <NavBtnLink  className="button" onClick={() => signIn()}>Login</NavBtnLink>
+         <NavBtnLink to ="button" onClick={() => signIn()}>Login</NavBtnLink>
          </NavBtn>
           
             }
