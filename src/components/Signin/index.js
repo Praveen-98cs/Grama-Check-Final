@@ -64,7 +64,7 @@ const Apply = () => {
         .then(response => response.json())
         .then(result => {
           sessionStorage.setItem("choreoToken", result.access_token);
-          console.log(sessionStorage.getItem("choreoToken"));
+          // console.log(sessionStorage.getItem("choreoToken"));
         })
         .catch(error => console.log("error", error));
     });
