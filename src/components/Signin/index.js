@@ -132,7 +132,7 @@ const Apply = () => {
 
   return (
     <Container id="apply">
-      {/* <FormWrap>
+      <FormWrap>
         <Icon> Grama-Check</Icon>
         <FormContent>
           <Form onSubmit={handleSubmit}>
@@ -208,80 +208,7 @@ const Apply = () => {
                         </div>  }
           </Form>
         </FormContent>
-      </FormWrap> */}
-
-      <div className="cover" onSubmit={handleSubmit}><br></br>
-            <h1>Apply</h1><br></br>
-            <p> Enter your Details here</p><br></br>
-            <input type="text" placeholder="Name" 
-              required
-              value={name}
-              onChange={e => setName(e.target.value)} /><br></br>
-
-
-            <input type="text" placeholder="NIC No"  
-              required
-              value={nic}
-              onChange={e => setNic(e.target.value)}/><br></br>
-
-
-            <input type="text" placeholder="Phone Number" 
-              required
-              value={phone}
-              onChange={e => setPhone(e.target.value)} /><br></br>
-
-
-
-            <input type="text" placeholder="Address"  
-              required
-              value={address}
-              onChange={e => setAddress(e.target.value)}/><br></br>
-            
-
-           
-
-            {isPending
-              ? <div className="login-btn" disabled> Submitting...</div>
-              : <div className="login-btn"
-             onClick={() => setIsClicked(false)}>
-                  {" "}Submit
-                </div>}
-             
-                <br/><br/>
-
-            {isPending
-              ? <div className="login-btn" disabled> Checking...</div>
-              : <div className="login-btn"
-                  onClick={() => {
-                    setIsClicked(true);
-                  }}
-                >
-                  {" "}Get Certificate
-                </div>}
-
-                <br></br>
-                
-            {isClicked && 
-              <div>
-                {localStorage.getItem("success") === "true"
-                  ? <Certificate name={name} nic={nic} address={address} />
-                  : localStorage.getItem("msg") === "NIC is not Valid"
-                    ? <p className="">Entered NIC is Invalid. Please Check once again</p>
-                    : localStorage.getItem("msg") === "Police Validation Failed"
-                      ? <p>
-                          Police Validation Failed. You have Criminal Activities
-                        </p>
-                      : <p>
-                          Address Validation Failed. Please enter a valid
-                          address
-                        </p>}
-                        </div>  }
-           
-
-            
-            
-        </div>
-
+      </FormWrap>
     </Container>
   );
 };
