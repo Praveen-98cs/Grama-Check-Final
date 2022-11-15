@@ -25,7 +25,7 @@ export const homeObjTwo = {
     LightText: false,
     LightTextDesc: false,
     topLine: 'How this works',
-    description: 'Get access to our exclusive app that allows you to get your Grama-Certificate Online.',
+    description: 'First Login as a user and then click "Apply" and then Enter your details to check.if you have entered the details right you can get a certificate',
    
      
     

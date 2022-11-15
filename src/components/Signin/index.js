@@ -196,7 +196,7 @@ const Apply = () => {
                 {localStorage.getItem("success") === "true"
                   ? <Certificate name={name} nic={nic} address={address} />
                   : localStorage.getItem("msg") === "NIC is not Valid"
-                    ? <p className="">Entered NIC is Invalid. Please Check once again</p>
+                    ? <p className="">Entered NIC is Invalid or wrong. Please Check again </p>
                     : localStorage.getItem("msg") === "Police Validation Failed"
                       ? <p>
                           Police Validation Failed. You have Criminal Activities
